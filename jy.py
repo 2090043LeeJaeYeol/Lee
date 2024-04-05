@@ -4,7 +4,7 @@ class Student:
         self.english = english
         self.math = math
 
-    def average(self):
+    def calculate_average(self):
         return (self.korean + self.english + self.math) / 3
 
 
@@ -20,9 +20,8 @@ def main():
         student = Student(korean, english, math)
         students.append(student)
 
-        average = student.average()
+        average = student.calculate_average()
         print(f"{i + 1}번째 학생의 평균 점수: {average}")
 
 
-if __name__ == "__main__":
-    main()
+main()
